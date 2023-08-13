@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Kanit:ital,wght@1,300&family=Prompt:ital,wght@1,500&family=REM:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: whitesmoke;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'REM', sans-serif;
+    background: linear-gradient(80deg, rgb(94, 88, 88), transparent);
+    width: 100%;
+}
+
+.nav {
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, rgb(76, 90, 76), );
+    width: 100%;
+}
+
+.nav li {
+    list-style: none;
+    padding: 15px;
+
+
+}
+
+.weather-padding {
+    font-size: 30px;
+}
+
+.main-section {
+
+    width: 80%;
+    margin: auto;
+    height: 88vh;
+    position: relative;
+    background: linear-gradient(rgba(92, 146, 92, 0.527), rgba(255, 255, 205, 0.5), rgba(168, 168, 33, 0.5), transparent);
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.days {
+    width: 39%;
+    position: absolute;
+    right: 0;
+    height: 88vh;
+
+}
+
+
+.days div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.days .search {
+    cursor: pointer;
+    font-size: 30px;
+
+
+}
+
+.days input {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: double groove solid transparent;
+    margin: 10px;
+    border-color: blueviolet;
+
+
+}
+
+.today-weather {
+    width: 59%;
+    position: absolute;
+    left: 0;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-section h1 {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.weather_icon {
+    width: 100px;
+    margin-top: 30px;
+}
+
+.temperature {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.city_name {
+    margin-bottom: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.column1,
+.column2 {
+    margin: 5px 20px 20px 20px;
+
+}
+
+.humidity,
+p {
+    text-align: center;
+    font-size: 10px;
+}
+
+.next_day_weather {
+    width: 100%;
+
+}
+
+.next_day_weather h2 {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.next_day_weather img {
+    width: 20%;
+    padding: 0 20px;
+}
+
+.next_day_weather h3 {
+    font-size: 15px;
+    padding: 0 20px;
+}
+
+.next2_day_weather h2 {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.next2_day_weather img {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.next2_day_weather h3 {
+    font-size: 15px;
+    padding: 0 15px;
+}
+.next3_day_weather h2 {
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.next3_day_weather img {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.next3_day_weather h3 {
+    font-size: 15px;
+    padding: 0 15px;
+}
+
+@media screen and (max-width:781px) {
+    .days div input {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .main-section {
+        width: 100%;
+    }
+
+    .days div i {
+        display: none;
+    }
+
+    .detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width:550px) {
+    .nav {
+        display: none;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        border: none;
+        height: 105vh;
+
+    }
+
+    .weather-padding {
+        font-size: 20px;
+    }
+
+    .days div input {
+        width: 80%;
+        margin: 5px;
+    }
+
+    .days div i {
+        display: block;
+    }
+
+    .days {
+        width: 100%;
+        position: relative;
+
+
+    }
+
+    .today-weather {
+        width: 100%;
+        position: relative;
+        height: 50vh;
+    }
+
+    .next_day_weather h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .next_day_weather img {
+        width: 20%;
+        padding: 0 10px;
+    }
+
+    .next_day_weather h3 {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+
+    .next2_day_weather h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .next2_day_weather img {
+        width: 20%;
+        padding: 0 10px;
+    }
+
+    .next2_day_weather h3 {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    
+    .next3_day_weather h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .next3_day_weather img {
+        width: 20%;
+        padding: 0 10px;
+    }
+
+    .next3_day_weather h3 {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+
+}

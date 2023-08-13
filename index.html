@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <li class="weather-padding">Weather App</li>
+    </nav>
+    <div class="main-section">
+        <div class="today-weather">
+            <img src="images/rain.png" alt="" class="weather_icon">
+            <h1 class="temperature">22 °C</h1>
+            <p class="country">Pakistan</p>
+            <h2 class="city_name">Islamabad</h2>
+            <div class="detail">
+                <div class="column1 col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="column2 col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">20 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="days">
+            <div>
+                <input type="search" id="city" placeholder="Enter City Name">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </div>
+            <div class="next_day_weather">
+                <h2></h2>
+                <img src="" alt="" class="next_day_visual">
+                <h3 class="temperature"></h3>
+
+            </div>
+            <div class="next2_day_weather">
+                <h2></h2>
+                <img src="" alt="" class="next2_day_visual">
+                <h3 class="temperature"></h3>
+
+            </div>
+            <div class="next3_day_weather">
+                <h2></h2>
+                <img src="" alt="" class="next3_day_visual">
+                <h3 class="temperature"></h3>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="https://kit.fontawesome.com/47a4f655f6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
