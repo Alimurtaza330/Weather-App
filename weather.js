@@ -37,11 +37,16 @@ let getWeather = async (city) => {
     } else if (weather.weather[0].main == "Snow") {
       weather_icon.src = "images/snow.png";
     }
+    console.log(weather);
 
   } catch (error) {
     console.error("Error fetching weather:", error);
   }
 };
+
+
+
+
 
 search.addEventListener('click', ()=>{
   getWeather(city.value);
