@@ -12,17 +12,15 @@ body {
     font-family: 'Kanit', sans-serif;
     font-family: 'Prompt', sans-serif;
     font-family: 'REM', sans-serif;
-    background: linear-gradient(80deg, rgb(94, 88, 88), transparent);
+    background: linear-gradient(360deg, rgb(94, 88, 88), transparent);
     width: 100%;
 }
 
 .nav {
     text-align: center;
-    color: white;
     background: linear-gradient(45deg, rgb(76, 90, 76), );
     width: 100%;
 }
-
 .nav li {
     list-style: none;
     padding: 15px;
@@ -216,7 +214,8 @@ p {
         flex-direction: column;
         border-radius: 0;
         border: none;
-        height: 120vh;
+        /* height: 120vh; */
+        height: 100%;
 
     }
 
