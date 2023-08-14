@@ -3,9 +3,12 @@ let humidity = document.querySelector(".humidity");
 let wind_speed = document.querySelector(".wind");
 let temperature = document.querySelector(".temperature");
 let city=document.querySelector(".days input");
+
+
 let search = document.querySelector(".search");
 let country = document.querySelector(".country");
 let weather_icon = document.querySelector(".weather_icon");
+
 
 const api_key = "c18ceb3915b01441bae16dab247242e7";
 const api_url =
@@ -52,4 +55,4 @@ search.addEventListener('click', ()=>{
   getWeather(city.value);
 })
 
-// getWeather();
+// getWeather(cityvalue"Islamabad");
